@@ -48,23 +48,5 @@ class News_Model_Test extends PHPUnit_Framework_TestCase
 
         $this->assertEquals("HOW TO GENERATE LOREM\nIPSUM", $article['title']);
 
-     /*   // Create a stub for the SomeClass class.
-        $stub = $this->getMock('SomeClass');
-
-        // Create a map of arguments to return values.
-        $map = array(
-            array('a', 'b', 'c', 'd'),
-            array('e', 'f', 'g', 'h')
-        );
-
-        // Configure the stub.
-        $stub->expects($this->any())
-            ->method('doSomething')
-            ->will($this->returnValueMap($map));
-
-        // $stub->doSomething() returns different values depending on
-        // the provided arguments.
-        $this->assertEquals('d', $stub->doSomething('a', 'b', 'c'));
-        $this->assertEquals('h', $stub->doSomething('e', 'f', 'g'));*/
     }
 }
