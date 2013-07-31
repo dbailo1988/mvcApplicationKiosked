@@ -30,7 +30,7 @@ class MysqlImproved_Driver extends Database_Library
         //connection parameters
         $host = 'localhost';
         $user = 'root';
-        $password = 'excalibur933';
+        $password = 'root';
         $database = 'test';
 
         //your implementation may require these...

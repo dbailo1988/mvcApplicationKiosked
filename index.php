@@ -4,7 +4,7 @@
  * WEB_ROOT_FOLDER is the name of the parent folder you created these
  * documents in.
  */
-define('SERVER_ROOT' , '/var/www/');
+define('SERVER_ROOT' , '/var/www/mvcKiosked/');
 
 //yoursite.com is your webserver
 define('SITE_ROOT' , 'http://localhost');

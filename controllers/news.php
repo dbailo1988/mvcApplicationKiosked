@@ -29,4 +29,22 @@ class News_Controller
         $view->assign('title' , $article['title']);
         $view->assign('content' , $article['content']);
     }
+
+    public function getArticle(array $getVars)
+    {
+        $newsModel = new News_Model;
+
+        //get an article
+        $article = $newsModel->get_article($getVars['author']);
+
+        $returnArray = array();
+        foreach (array('author', 'content', 'title') as $field)
+        {
+            $returnArray[$field] = $article[$field];
+        }
+
+        echo json_encode($returnArray);
+        return;
+
+    }
 }

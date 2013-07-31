@@ -57,6 +57,8 @@ $parsed = explode('&' , $request);
 //the page is the first element
 $page = array_shift($parsed);
 
+$action = array_shift($parsed);
+
 //the rest of the array are get statements, parse them out.
 $getVars = array();
 foreach ($parsed as $argument)
@@ -96,4 +98,4 @@ else
 
 //once we have the controller instantiated, execute the default function
 //pass any GET varaibles to the main method
-$controller->main($getVars);
+$controller->$action($getVars);
